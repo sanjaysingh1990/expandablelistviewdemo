@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    >
+
+    <View
+        android:id="@+id/linetop"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+    <TextView
+        android:id="@+id/laptop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/material_grey"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/yellow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linetop"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+    <View
+        android:id="@+id/linebottom"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/laptop"
+        app:layout_constraintTop_toBottomOf="@+id/laptop"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/laptop" />
+
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="@color/material_grey_light"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/linebottom"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/linebottom"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/linebottom" />
+
+
+</android.support.constraint.ConstraintLayout>
